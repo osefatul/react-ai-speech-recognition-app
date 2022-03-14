@@ -10,9 +10,9 @@ function App() {
     // onCommand will listen to command
     alanBtn({
       key: alanKey,
-      onCommand: ({ command }) => {
-        if (command === "testCommand") {
-          alert("This Code was executed");
+      onCommand: ({ command, articles }) => {
+        if (command === "newHeadlines") {
+          console.trace(articles);
         }
       },
     });
