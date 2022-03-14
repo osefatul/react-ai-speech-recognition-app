@@ -7,11 +7,14 @@ const alanKey =
   "574b14d84880a9d5b2a102dc6860d98c2e956eca572e1d8b807a3e2338fdd0dc/stage";
 function App() {
   useEffect(() => {
+    // onCommand will listen to command
     alanBtn({
       key: alanKey,
-      onCommand: ({command})=>{
-        if(command)
-      }
+      onCommand: ({ command }) => {
+        if (command === "testCommand") {
+          alert("This Code was executed");
+        }
+      },
     });
   }, []);
   return (
