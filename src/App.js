@@ -23,10 +23,10 @@ function App() {
   }, []);
   return (
     // h-screen: for the whole viewport screen
-    <div className="bg-white h-screen grid ">
-      <h1 className="text-4xl font-bold py-8 justify-center mx-auto">
-        Latest News
-      </h1>
+    <div className="grid h-screen relative ">
+      <div className="flex justify-center items-center bg-zinc-100 fixed top-0 left-0 right-0 z-50 py-8">
+        <h1 className="text-4xl font-bold ">Latest News</h1>
+      </div>
       <NewsCards articles={newsArticles} />
     </div>
   );

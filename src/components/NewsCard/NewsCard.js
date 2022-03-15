@@ -4,9 +4,9 @@ function NewsCard({
   article: { description, publishedAt, source, title, url, urlToImage },
 }) {
   return (
-    <div>
+    <div className="">
       <a href={url}>
-        <div className="group cursor-pointer border rounded-lg overflow-hidden bg-slate-50 h-full">
+        <div className="group cursor-pointer border rounded-lg overflow-hidden bg-slate-50  min-h-full">
           <div className="">
             <div></div>
             <img
