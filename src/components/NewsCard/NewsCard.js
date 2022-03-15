@@ -5,7 +5,17 @@ function NewsCard({
 }) {
   return (
     <div>
-      <div href={url}></div>
+      <div href={url}>
+        <div>
+          <img
+            src={
+              urlToImage |
+              "https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png"
+            }
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 }
