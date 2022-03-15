@@ -21,8 +21,8 @@ function App() {
     });
   }, []);
   return (
-    <div className="bg-whitesmoke grid items-center justify-center ">
-      <h1 className="text-4xl font-bold py-8 justify-center mx-auto"> Hi</h1>
+    <div className="bg-whitesmoke grid ">
+      <h1 className="text-4xl font-bold py-8 justify-center mx-auto">Hi</h1>
       <NewsCards articles={newsArticles} />
     </div>
   );
