@@ -15,13 +15,15 @@ function App() {
       onCommand: ({ command, articles }) => {
         if (command === "newHeadlines") {
           //console.trace(articles);
+          console.log(articles);
           setNewsArticles(articles);
         }
       },
     });
   }, []);
   return (
-    <div className="bg-whitesmoke grid ">
+    // h-screen: for the whole viewport screen
+    <div className="bg-gray-300 h-screen grid ">
       <h1 className="text-4xl font-bold py-8 justify-center mx-auto">Hi</h1>
       <NewsCards articles={newsArticles} />
     </div>
