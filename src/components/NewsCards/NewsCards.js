@@ -44,8 +44,20 @@ function NewsCards({ articles }) {
       "
       >
         {infoCards.map((infoCard, i) => (
-          <div className={infoCard.color}>
-            <h1>{infoCard.title}</h1>
+          <div className={`${infoCard.color} p-2 `}>
+            <h1 className="text-xl font-bold">{infoCard.title}</h1>
+            {infoCard.info ? (
+              <h2 className="font-medium">
+                {/* split the title with spaces and give me the second index */}
+                <strong>{infoCard.title.split(" ")[2]}</strong> :
+                <br />
+                {infoCard.info}
+              </h2>
+            ) : null}
+            <h3>
+              <span className="font-semibold">Try Saying:</span> <br />
+              <i>{infoCard.text}</i>
+            </h3>
           </div>
         ))}
       </div>
