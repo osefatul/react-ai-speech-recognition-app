@@ -32,15 +32,18 @@ function NewsCards({ articles }) {
   if (!articles.length) {
     return (
       <div
-        className="grid grid-cols-1 
+        className="
+      grid grid-cols-1 
       sm:grid-cols-2 
       lg:grid-cols-3 
       xl:grid-cols-4
-      2xl:mx-auto 
+
       gap-2 md:gap-5 
       lg:gap-8 p-2 
+      
       md:p-3
-      h-5/6
+      mx-auto
+      
       "
       >
         {infoCards.map((infoCard, i) => (

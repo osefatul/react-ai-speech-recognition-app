@@ -25,19 +25,20 @@ function App() {
   return (
     // h-screen: for the whole viewport screen
     // top-0 z-50 sticky : easy peasy fixed header
-    <div className=" flex flex-col justify-center items-center  top-0">
+    <div className=" flex flex-col justify-center items-center  ">
       <div
         className="flex justify-center items-center
       bg-gray-700  
         z-50 sticky top-0  
         w-full h-max mb-4 
         text-center
+        
         "
       >
         {/* <h1 className="text-5xl font-bold ">Latest News</h1> */}
         <img
           src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/67659112_438501920211949_8507331483155824640_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=wHewIZLyQs0AX81eyFj&_nc_ht=scontent-iad3-2.xx&oh=00_AT8piH5XjdPjlECmMeYFDldYW4UkyW2aJ477L9MUBthe6g&oe=62575BA6"
-          className="w-full h-32 md:min-h-full object-cover"
+          className="w-full h-32 object-cover"
           alt="logo"
         />
       </div>
