@@ -14,7 +14,7 @@ function App() {
     // onCommand will listen to command
     alanBtn({
       key: alanKey,
-      onCommand: ({ command, articles }) => {
+      onCommand: ({ command, articles, number }) => {
         if (command === "newHeadlines") {
           //console.trace(articles);
           console.log(articles);
@@ -22,6 +22,23 @@ function App() {
           setActiveArticle(-1);
         } else if (command === "highlight") {
           setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
+        } else if (command === "open") {
+          // someimes the number shown in string and it doesnt let it to open a window.
+          const parsedNumber =
+            number.length > 2
+              ? wordsToNumbers(number, { fuzzy: true })
+              : number;
+
+          // because as index starts form 0
+          const article = articles[parsedNumber - 1];
+          if (parsedNumber > articles.length) {
+            alanBtn().playText("Please try that again...");
+          } else if (article) {
+            window.open(article.url, "_blank");
+            alanBtn().playText("Opening...");
+          } else {
+            alanBtn().playText("Please try that again...");
+          }
         }
       },
     });
