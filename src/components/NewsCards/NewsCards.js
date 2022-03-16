@@ -35,8 +35,8 @@ function NewsCards({ articles }) {
         className="grid grid-cols-1 
       sm:grid-cols-2 
       lg:grid-cols-3 
-      xl:grid-cols-4 
-      2xl:grid-cols-6 
+      xl:grid-cols-4
+      2xl:mx-auto 
       gap-2 md:gap-5 
       lg:gap-8 p-2 
       md:p-3
@@ -44,18 +44,27 @@ function NewsCards({ articles }) {
       "
       >
         {infoCards.map((infoCard, i) => (
-          <div className={`${infoCard.color} p-2 `}>
-            <h1 className="text-xl font-bold">{infoCard.title}</h1>
+          <div
+            className={`${infoCard.color}  
+            flex flex-col justify-between items-center 
+            text-center 
+            border rounded-lg 
+            p-10`}
+          >
+            <h1 className="text-2xl font-bold">{infoCard.title}</h1>
             {infoCard.info ? (
               <h2 className="font-medium">
                 {/* split the title with spaces and give me the second index */}
-                <strong>{infoCard.title.split(" ")[2]}</strong> :
+                <strong className="text-xl">
+                  {infoCard.title.split(" ")[2]}
+                </strong>{" "}
+                :
                 <br />
                 {infoCard.info}
               </h2>
             ) : null}
             <h3>
-              <span className="font-semibold">Try Saying:</span> <br />
+              <span className="font-semibold text-xl">Try Saying:</span> <br />
               <i>{infoCard.text}</i>
             </h3>
           </div>

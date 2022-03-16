@@ -6,7 +6,7 @@ function NewsCard({
   return (
     <div className="">
       <a href={url}>
-        <div className="group cursor-pointer border rounded-lg overflow-hidden bg-slate-50  min-h-full">
+        <div className="group cursor-pointer border rounded-lg overflow-hidden bg-gray-50  min-h-full">
           <div className="">
             <div></div>
             <img
