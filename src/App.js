@@ -23,8 +23,9 @@ function App() {
   }, []);
   return (
     // h-screen: for the whole viewport screen
-    <div className="grid h-screen relative ">
-      <div className="flex justify-center items-center bg-zinc-100 fixed top-0 left-0 right-0 z-50 py-8">
+    // top-0 z-50 sticky : easy peasy fixed header
+    <div className="h-screen">
+      <div className="flex justify-center items-center bg-zinc-100 w-full h-16 z-50 sticky top-0 ">
         <h1 className="text-4xl font-bold ">Latest News</h1>
       </div>
       <NewsCards articles={newsArticles} />

@@ -39,10 +39,14 @@ function NewsCards({ articles }) {
       2xl:grid-cols-6 
       gap-2 md:gap-5 
       lg:gap-8 p-2 
-      md:p-3 "
+      md:p-3
+      h-5/6
+      "
       >
         {infoCards.map((infoCard, i) => (
-          <div className={infoCard.color}> Hi </div>
+          <div className={infoCard.color}>
+            <h1>{infoCard.title}</h1>
+          </div>
         ))}
       </div>
     );
