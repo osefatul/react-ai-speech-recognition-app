@@ -36,11 +36,11 @@ function NewsCards({ articles }) {
       sm:grid-cols-2 
       lg:grid-cols-3 
       xl:grid-cols-4 
-  
-      gap-2 md:gap-5 
-      lg:gap-8 p-2 
-      md:p-3
-      h-5/6
+      jutufy-between mx-auto 
+      gap-2 md:gap-5 lg:gap-8 
+      p-2 md:p-3
+      h-4/6 w-10/12
+      
       "
       >
         {infoCards.map((infoCard, i) => (
