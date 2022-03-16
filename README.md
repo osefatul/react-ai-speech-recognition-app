@@ -18,3 +18,14 @@ Go to [newsapi.org](https://newsapi.org/) and signup to get you api key. Once yo
 #### NewsCard
 
 In order to pass a link from the article props to the NewsCard container, we used anchor tag `<a href="link" />` because we can't directly pass a link to a div.
+
+##### 1. Activating Card
+
+We initialized useState for an active article. pass the activeArticle from App.js to NewCard.js and show active if the highlighted command is which is assigned to the activeArticle === to the index of that article - then add border bottom
+
+##### 2. Automatically Scrolling to Next Card Row
+
+Automatically scroll a page for the next card row without touching mouse.
+
+First whenever a page renders we need to setup our references for the all cards or individually for each specific card. Create an array of 20 elements because we have 20 cards each time, and map through the array, we only need the index parameter and check if the reference exist, if yes then we keep it or otherwise create one. and then set all of the referenced cards in to the array of elRefs.
+` setElRefs((refs) => Array(20) .fill() .map((_, j) => refs[j] || createRef()) ); `

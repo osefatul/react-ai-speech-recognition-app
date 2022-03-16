@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState, useEffect, createRef } from "react";
 import { Link } from "react-router-dom";
 function NewsCard({
   article: { description, publishedAt, source, title, url, urlToImage },
+  activeArticle,
+  i,
 }) {
+  const [elRefs, setElRefs] = useState([]);
+  // x-axis = 0 and for y-axis scroll to the top of the cart and then slightly down
+  const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
+
+  useEffect(() => {
+    // create an array of 20 elements, bcoz we always have 20 cards
+    setElRefs((refs) =>
+      Array(20)
+        .fill()
+        .map((_, j) => refs[j] || createRef())
+    );
+  }, []);
+
+  useEffect(() => {
+    if (i === activeArticle && elRefs[activeArticle]) {
+      scrollToRef(elRefs[activeArticle]);
+    }
+  }, [i, activeArticle, elRefs]);
+
   return (
-    <div className="">
+    <div
+      ref={elRefs[i]}
+      className={activeArticle === i ? "border-b-4 border-indigo-500" : " "}
+    >
       <a href={url}>
         <div className="group cursor-pointer border rounded-lg overflow-hidden bg-gray-50  min-h-full">
           <div className="">

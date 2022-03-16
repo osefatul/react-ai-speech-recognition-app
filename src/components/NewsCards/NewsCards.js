@@ -27,7 +27,7 @@ const infoCards = [
   },
 ];
 
-function NewsCards({ articles }) {
+function NewsCards({ articles, activeArticle }) {
   // Sp before someone ask Alan we need to have components of guide
   if (!articles.length) {
     return (
@@ -39,6 +39,7 @@ function NewsCards({ articles }) {
       jutufy-between mx-auto 
       gap-2 md:gap-5 lg:gap-8 
       p-2 md:p-3
+      mt-2 sm:mt-3
       h-4/6 w-10/12
       
       "
@@ -81,11 +82,12 @@ function NewsCards({ articles }) {
     xl:grid-cols-4 
     2xl:grid-cols-6 
     gap-2 md:gap-5 
-    lg:gap-8 p-2 
+    lg:gap-8 p-2
+    mt-2 sm:mt-3 
     md:p-3 "
     >
       {articles.map((article, i) => (
-        <NewsCard i={i} article={article} />
+        <NewsCard i={i} article={article} activeArticle={activeArticle} />
       ))}
     </div>
   );
