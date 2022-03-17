@@ -14,7 +14,7 @@ Go to [newsapi.org](https://newsapi.org/) and signup to get you api key. Once yo
 4- Design UI for the news cards.
 5- So then implement the basic page for the users as a guide what to expect and what they use Alan.ai for.
 6- Once you the design the landing or home, then Alan should be programmed again to give us different categories to choose and what to expect from.
-7- Alan should be programmed 
+7- Alan should be programmed to let us in to choose a news card. it also should be able to show us the activated card.
 
 
 #### NewsCard
