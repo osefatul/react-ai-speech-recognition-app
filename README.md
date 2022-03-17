@@ -15,7 +15,7 @@ Go to [newsapi.org](https://newsapi.org/) and signup to get you api key. Once yo
 5- So then implement the basic page for the users as a guide what to expect and what they use Alan.ai for.
 6- Once you the design the landing or home, then Alan should be programmed again to give us different categories to choose and what to expect from.
 7- From the home page to the choosen category of news, Alan should be programmed to let us in to choose a news card base on title or card index number. it also should be able to show us the activated card with border bottom colored.
-8- Page should be designe to automatically get scrolled per row as Alan is telling the titles of the news card based on a specific category.
+8- Page should be designed to automatically get scrolled per row as Alan is telling the titles of the news card based on a specific category.
 
 
 ### NewsCard
