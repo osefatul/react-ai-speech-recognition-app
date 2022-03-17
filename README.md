@@ -14,6 +14,8 @@ Go to [newsapi.org](https://newsapi.org/) and signup to get you api key. Once yo
 4- Design.
 
 5- So then implement the basic page for the users as a guide what to expect and what they use Alan.ai for.
+6- Once you the first landing or home page is designed, Alan should be programmed again to give us different categories to choose and what to expect from.
+
 
 #### NewsCard
 
