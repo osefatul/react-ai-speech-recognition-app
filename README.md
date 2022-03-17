@@ -28,4 +28,6 @@ We initialized useState for an active article. pass the activeArticle from App.j
 Automatically scroll a page for the next card row without touching mouse.
 
 First whenever a page renders we need to setup our references for the all cards or individually for each specific card. Create an array of 20 elements because we have 20 cards each time, and map through the array, we only need the index parameter and check if the reference exist, if yes then we keep it or otherwise create one. and then set all of the referenced cards in to the array of elRefs.
-` setElRefs((refs) => Array(20) .fill() .map((_, j) => refs[j] || createRef()) ); `
+`setElRefs((refs) => Array(20) .fill() .map((_, j) => refs[j] || createRef()) );`
+
+Sometimes when you say "Open article number two, the bot mistakenly assume 'to', thats the reason we convert the 'to' -> 'two' with fuzzy:true
