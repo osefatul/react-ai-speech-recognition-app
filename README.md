@@ -1,7 +1,9 @@
 # React AI Speech Recognition Web Application
 
 Click [Here](https://upbeat-jones-bfdf75.netlify.app/) to visit our website.
-We are using ALAN AI for our speech recognition software. You can visit to the website by clicking [here](https://alan.app/).
+
+
+- We are using [ALAN AI](https://alan.app/) for our speech recognition software. 
 
 Signup and then start an empty project. Click on the integration and copy SDK key. Go to APP.js file and assign the key to alanKey.
 
