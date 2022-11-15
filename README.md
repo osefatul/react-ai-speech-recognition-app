@@ -3,11 +3,13 @@
 Click [Here](https://upbeat-jones-bfdf75.netlify.app/) to visit our website.
 
 
-### ALAN AI
-We are using [ALAN AI](https://alan.app/) for our speech recognition software. 
+### Intro
 
+We are using ALAN AI for our speech recognition software. The purpose of this App to automate reading, watching and listening to news without searching any website. The computer search and fetch the latest news based on the word you say to it..
+
+
+### Alan AI
 Signup and then start an empty project. Click on the integration and copy SDK key. Go to APP.js file and assign the key to alanKey.
-
 Go to [newsapi.org](https://newsapi.org/) and signup to get you api key. Once you got your API key you can go back to ALANAI studio and paste it there.
 
 ### Roadmap
