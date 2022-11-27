@@ -1,11 +1,10 @@
 # React AI Speech Recognition Web Application
 
-Click [Here](https://upbeat-jones-bfdf75.netlify.app/) to visit our website.
-
-
 ### Intro
-
 We are using ALAN AI for our speech recognition software. The purpose of this App to automate reading, watching and listening to news without searching any website. The computer search and fetch the latest news based on the word you say to it..
+
+### Live
+Click [Here](https://upbeat-jones-bfdf75.netlify.app/) to visit our website.
 
 
 ### Alan AI
